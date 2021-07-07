@@ -1,13 +1,15 @@
 <script>
+	import { browser } from '$app/env';
 	import Header from '$lib/Header/index.svelte';
 	import '../app.css';
 	import { foo } from '$lib/client-module?client';
 	import { hey } from '$lib/server-module?server';
 
-	if (import.meta.env.SSR) {
-		console.log('hey', hey);
-	} else {
+	// In normal vite app, import.meta.env.SSR can be used
+	if (browser) {
 		console.log('foo', foo);
+	} else {
+		console.log('hey', hey);
 	}
 </script>
 
