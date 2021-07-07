@@ -25,7 +25,7 @@ function iso() {
 				return importee.slice(0, -7);
 			}
 		},
-		async transform(code, id, ssr) {
+		transform(code, id, ssr) {
 			let s,
 				m,
 				re = ssr ? clientImportRe : serverImportRe;
