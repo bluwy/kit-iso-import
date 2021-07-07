@@ -5,6 +5,7 @@ specifiers:
   '@lukeed/uuid': ^2.0.0
   '@sveltejs/kit': next
   cookie: ^0.4.1
+  magic-string: ^0.25.7
   prettier: ~2.2.1
   prettier-plugin-svelte: ^2.2.0
   svelte: ^3.34.0
@@ -15,7 +16,8 @@ dependencies:
   cookie: 0.4.1
 
 devDependencies:
-  '@sveltejs/kit': 1.0.0-next.121_svelte@3.38.3
+  '@sveltejs/kit': 1.0.0-next.122_svelte@3.38.3
+  magic-string: 0.25.7
   prettier: 2.2.1
   prettier-plugin-svelte: 2.3.1_prettier@2.2.1+svelte@3.38.3
   svelte: 3.38.3
@@ -48,8 +50,8 @@ packages:
       picomatch: 2.3.0
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.121_svelte@3.38.3:
-    resolution: {integrity: sha512-I8vUK3uZsX/IXmW6mUzPip7/WMIbxpDmcUR0d24kz38Fv8WIDeIoqOQTtg0y2JrxhD6P2H3/GMcCNcBS8bUWtw==}
+  /@sveltejs/kit/1.0.0-next.122_svelte@3.38.3:
+    resolution: {integrity: sha512-HwyYcbLMN2q7HuO561CD01RZ8ZPEdZgwdTKmyvMYrTZehH9WPJI2VF+7bI84mNxWiQiLnc2gg+Y0klVHXJO+Yw==}
     engines: {node: ^12.20 || >=14.13}
     hasBin: true
     peerDependencies:
@@ -175,6 +177,12 @@ packages:
       has: 1.0.3
     dev: true
 
+  /magic-string/0.25.7:
+    resolution: {integrity: sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==}
+    dependencies:
+      sourcemap-codec: 1.4.8
+    dev: true
+
   /mri/1.1.6:
     resolution: {integrity: sha512-oi1b3MfbyGa7FJMP9GmLTttni5JoICpYBRlq+x5V16fZbLsnL9N3wFqqIm/nIG43FjUFkFh9Epzp/kzUGUnJxQ==}
     engines: {node: '>=4'}
@@ -253,6 +261,10 @@ packages:
   /source-map-js/0.6.2:
     resolution: {integrity: sha512-/3GptzWzu0+0MBQFrDKzw/DvvMTUORvgY6k6jd/VS6iCR4RDTKWH6v6WPwQoUO8667uQEf9Oe38DxAYWY5F/Ug==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /sourcemap-codec/1.4.8:
+    resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
     dev: true
 
   /supports-color/7.2.0:

@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@sveltejs/kit": "next",
+    "magic-string": "^0.25.7",
     "prettier": "~2.2.1",
     "prettier-plugin-svelte": "^2.2.0",
     "svelte": "^3.34.0"

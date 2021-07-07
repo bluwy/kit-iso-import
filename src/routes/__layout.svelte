@@ -1,6 +1,14 @@
 <script>
 	import Header from '$lib/Header/index.svelte';
 	import '../app.css';
+	import { foo } from '$lib/client-module?client';
+	import { hey } from '$lib/server-module?server';
+
+	if (import.meta.env.SSR) {
+		console.log('hey', hey);
+	} else {
+		console.log('foo', foo);
+	}
 </script>
 
 <Header />
