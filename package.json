@@ -10,10 +10,10 @@
   },
   "devDependencies": {
     "@sveltejs/kit": "next",
-    "magic-string": "^0.25.7",
     "prettier": "~2.2.1",
     "prettier-plugin-svelte": "^2.2.0",
-    "svelte": "^3.34.0"
+    "svelte": "^3.34.0",
+    "vite-plugin-iso-import": "^0.0.1"
   },
   "type": "module",
   "dependencies": {
