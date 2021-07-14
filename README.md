@@ -1,6 +1,6 @@
 # kit-iso-import
 
-Testing a vite plugin that adds support for `?client` and `?server` import tags.
+Uses [vite-plugin-iso-import](https://github.com/bluwy/vite-plugin-iso-import) that adds support for `?client` and `?server` import tags.
 
 ```js
 // Only loads if not ssr
@@ -9,6 +9,8 @@ import { foo } from '$lib/client-module?client';
 import { hey } from '$lib/server-module?server';
 ```
 
-Plugin code in [svelte.config.js](./svelte.config.js).
-
 Example import usage in [src/routes/\_\_layout.svelte](./src/routes/__layout.svelte).
+
+For intellisense to work in JS/TS files, make sure you set `"typescript.tsserver.pluginPaths": ["."]` in VSCode's `settings.json`.
+
+Support for Svelte files is not available yet.
