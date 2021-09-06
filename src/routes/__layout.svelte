@@ -4,12 +4,16 @@
 	import '../app.css';
 	import { foo } from '$lib/client-module?client';
 	import { hey } from '$lib/server-module?server';
+	import camelcase from 'camelcase?client';
+	import { trim } from 'lodash-es?server';
 
 	// In normal vite app, import.meta.env.SSR can be used
 	if (browser) {
 		console.log('foo', foo);
+		console.log(camelcase('camel_case'));
 	} else {
 		console.log('hey', hey);
+		console.log(trim(' trim '));
 	}
 </script>
 
