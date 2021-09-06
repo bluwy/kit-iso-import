@@ -10,7 +10,7 @@ specifiers:
   prettier: ~2.2.1
   prettier-plugin-svelte: ^2.4.0
   svelte: ^3.42.4
-  vite-plugin-iso-import: ^0.1.1
+  vite-plugin-iso-import: ^0.1.2
 
 dependencies:
   '@fontsource/fira-mono': 4.5.0
@@ -24,7 +24,7 @@ devDependencies:
   prettier: 2.2.1
   prettier-plugin-svelte: 2.4.0_prettier@2.2.1+svelte@3.42.4
   svelte: 3.42.4
-  vite-plugin-iso-import: link:../../vite-plugin-iso-import
+  vite-plugin-iso-import: 0.1.2
 
 packages:
 
@@ -121,6 +121,10 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
+    dev: true
+
+  /es-module-lexer/0.7.1:
+    resolution: {integrity: sha512-MgtWFl5No+4S3TmhDmCz2ObFGm6lEpTnzbQi+Dd+pw4mlTIZTmM2iAs5gRlmx5zS9luzobCSBSI90JM/1/JgOw==}
     dev: true
 
   /esbuild/0.12.25:
@@ -267,6 +271,13 @@ packages:
   /svelte/3.42.4:
     resolution: {integrity: sha512-DqC0AmDdBrrbIA+Kzl3yhBb6qCn4vZOAfxye2pTnIpinLegyagC5sLI8Pe9GPlXu9VpHBXIwpDDedpMfu++epA==}
     engines: {node: '>= 8'}
+    dev: true
+
+  /vite-plugin-iso-import/0.1.2:
+    resolution: {integrity: sha512-YaQA9pbAz7EHXWGmBaTetl1RnF5wKQ4TciKZhI+RAkqN2V9WtWQ19tdMotN+ajmYw7a2jvzA1KrBBmPOr0ZGmw==}
+    dependencies:
+      es-module-lexer: 0.7.1
+      magic-string: 0.25.7
     dev: true
 
   /vite/2.5.3:
